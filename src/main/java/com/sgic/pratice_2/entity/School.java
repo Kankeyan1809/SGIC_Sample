@@ -16,6 +16,7 @@ public class School {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String teacher;
 
     @OneToMany(mappedBy = "school", cascade = CascadeType.ALL)
     private List<Student> students;
